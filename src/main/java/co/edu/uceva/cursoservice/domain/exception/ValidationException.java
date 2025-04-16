@@ -1,4 +1,4 @@
-package co.empresa.productoservice.domain.exception;
+package co.edu.uceva.cursoservice.domain.exception;
 
 import org.springframework.validation.BindingResult;
 

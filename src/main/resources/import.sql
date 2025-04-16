@@ -1,10 +1,30 @@
-INSERT INTO producto (nombre, descripcion, precio, stock, foto) VALUES ('Producto 1', 'Descripcion 1', 100, 2, 'foto1.jpg');
-INSERT INTO producto (nombre, descripcion, precio, stock, foto) VALUES ('Producto 2', 'Descripcion 2', 200, 4, 'foto2.jpg');
-INSERT INTO producto (nombre, descripcion, precio, stock, foto) VALUES ('Producto 3', 'Descripcion 3', 300, 6, 'foto3.jpg');
-INSERT INTO producto (nombre, descripcion, precio, stock, foto) VALUES ('Producto 4', 'Descripcion 4', 400, 8, 'foto4.jpg');
-INSERT INTO producto (nombre, descripcion, precio, stock, foto) VALUES ('Producto 5', 'Descripcion 5', 500, 10, 'foto5.jpg');
-INSERT INTO producto (nombre, descripcion, precio, stock, foto) VALUES ('Producto 6', 'Descripcion 6', 600, 12, 'foto6.jpg');
-INSERT INTO producto (nombre, descripcion, precio, stock, foto) VALUES ('Producto 7', 'Descripcion 7', 700, 14, 'foto7.jpg');
-INSERT INTO producto (nombre, descripcion, precio, stock, foto) VALUES ('Producto 8', 'Descripcion 8', 800, 16, 'foto8.jpg');
-INSERT INTO producto (nombre, descripcion, precio, stock, foto) VALUES ('Producto 9', 'Descripcion 9', 900, 18, 'foto9.jpg');
-INSERT INTO producto (nombre, descripcion, precio, stock, foto) VALUES ('Producto 10', 'Descripcion 10', 1000, 20, 'foto10.jpg');
+
+INSERT INTO curso (id, nombre, descripcion, precio, creditos, duracion_semanas, imagen) VALUES
+    (1, 'Programación en Java', 'Curso introductorio a Java SE', 150.00, 3, 8, 'java.jpg');
+
+INSERT INTO curso (id, nombre, descripcion, precio, creditos, duracion_semanas, imagen) VALUES
+    (2, 'Bases de Datos', 'Modelado y consultas SQL', 120.00, 2, 6, 'sql.jpg');
+
+INSERT INTO curso (id, nombre, descripcion, precio, creditos, duracion_semanas, imagen) VALUES
+    (3, 'Desarrollo Web', 'Frontend con HTML, CSS y JS', 180.00, 4, 10, 'web.jpg');
+
+INSERT INTO curso (id, nombre, descripcion, precio, creditos, duracion_semanas, imagen) VALUES
+    (4, 'Spring Boot Avanzado', 'Microservicios con Spring Boot', 200.00, 4, 12, 'spring.jpg');
+
+INSERT INTO curso (id, nombre, descripcion, precio, creditos, duracion_semanas, imagen) VALUES
+    (5, 'Angular desde Cero', 'SPA con Angular y TypeScript', 170.00, 3, 9, 'angular.jpg');
+
+INSERT INTO curso (id, nombre, descripcion, precio, creditos, duracion_semanas, imagen) VALUES
+    (6, 'Docker y Kubernetes', 'Contenedores y orquestación', 190.00, 3, 10, 'docker.jpg');
+
+INSERT INTO curso (id, nombre, descripcion, precio, creditos, duracion_semanas, imagen) VALUES
+    (7, 'Testing con JUnit y Mockito', 'Pruebas automatizadas en Java', 130.00, 2, 6, 'junit.jpg');
+
+INSERT INTO curso (id, nombre, descripcion, precio, creditos, duracion_semanas, imagen) VALUES
+    (8, 'Seguridad en Aplicaciones', 'JWT, OAuth2 y más', 160.00, 3, 8, 'seguridad.jpg');
+
+INSERT INTO curso (id, nombre, descripcion, precio, creditos, duracion_semanas, imagen) VALUES
+    (9, 'APIs RESTful', 'Diseño y desarrollo de APIs REST', 140.00, 2, 7, 'api.jpg');
+
+INSERT INTO curso (id, nombre, descripcion, precio, creditos, duracion_semanas, imagen) VALUES
+    (10, 'Fundamentos de DevOps', 'CI/CD, integración y despliegue', 180.00, 3, 9, 'devops.jpg');

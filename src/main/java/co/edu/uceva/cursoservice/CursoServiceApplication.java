@@ -1,13 +1,13 @@
-package co.empresa.productoservice;
+package co.edu.uceva.cursoservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProductoServiceApplication {
+public class CursoServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ProductoServiceApplication.class, args);
+        SpringApplication.run(CursoServiceApplication.class, args);
     }
 
 }
