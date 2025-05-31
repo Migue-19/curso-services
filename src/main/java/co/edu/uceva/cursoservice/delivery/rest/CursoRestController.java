@@ -14,11 +14,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v1/curso")
 public class CursoRestController {
@@ -39,6 +41,7 @@ public class CursoRestController {
     /**
      * Listar todos los productos.
      */
+    @CrossOrigin(origins = "*")
     @GetMapping("/cursos")
     public ResponseEntity<Map<String, Object>> getCursos() {
         List<Curso> cursos = cursoService.findAll();
@@ -53,6 +56,7 @@ public class CursoRestController {
     /**
      * Listar productos con paginación.
      */
+    @CrossOrigin(origins = "*")
     @GetMapping("/curso/page/{page}")
     public ResponseEntity<Object> index(@PathVariable Integer page) {
         Pageable pageable = PageRequest.of(page, 4);
@@ -66,6 +70,7 @@ public class CursoRestController {
     /**
      * Crear un nuevo producto pasando el objeto en el cuerpo de la petición, usando validaciones
      */
+    @CrossOrigin(origins = "*")
     @PostMapping("/cursos")
     public ResponseEntity<Map<String, Object>> save(@Valid @RequestBody Curso curso, BindingResult result) {
         if (result.hasErrors()) {
@@ -82,6 +87,7 @@ public class CursoRestController {
     /**
      * Eliminar un producto pasando el objeto en el cuerpo de la petición.
      */
+    @CrossOrigin(origins = "*")
     @DeleteMapping("/cursos")
     public ResponseEntity<Map<String, Object>> delete(@RequestBody Curso curso) {
         cursoService.findById(curso.getId())
@@ -97,6 +103,7 @@ public class CursoRestController {
      * Actualizar un curso pasando el objeto en el cuerpo de la petición.
      * @param curso: Objeto Producto que se va a actualizar
      */
+    @CrossOrigin(origins = "*")
     @PutMapping("/cursos")
     public ResponseEntity<Map<String, Object>> update(@Valid @RequestBody Curso curso, BindingResult result) {
         if (result.hasErrors()) {
@@ -114,6 +121,7 @@ public class CursoRestController {
     /**
      * Obtener un producto por su ID.
      */
+    @CrossOrigin(origins = "*")
     @GetMapping("/cursos/{id}")
     public ResponseEntity<Map<String, Object>> findById(@PathVariable Long id) {
         Curso curso = cursoService.findById(id)

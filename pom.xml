@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>co.empresa</groupId>
-    <artifactId>producto-service</artifactId>
+    <artifactId>curso-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>producto-service</name>
-    <description>producto-service</description>
+    <name>curso-service</name>
+    <description>Microservicio para gestión de cursos</description>
     <url/>
     <licenses>
         <license/>
